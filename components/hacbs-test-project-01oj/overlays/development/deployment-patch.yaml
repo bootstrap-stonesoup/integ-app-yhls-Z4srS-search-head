@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-01oj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/integration1-ohpz-tenant/integ-app-yhls/hacbs-test-project-01oj@sha256:04c975b3766a1ccb01784043ad6789dff54b52810d7502f063f68d248750b173
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
